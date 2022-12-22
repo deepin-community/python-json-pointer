@@ -1,0 +1,15 @@
+#!/bin/bash
+#----------------------
+# Testing cli utilities
+#----------------------
+set -e
+
+cd "$AUTOPKGTEST_TMP"
+
+if ! jsonpointer -h 2>&1 > /dev/null; then
+    echo "ERROR, ${cli} is not running"
+    exit 1
+else
+    echo "OK: ${cli} is running"
+fi
+exit 0

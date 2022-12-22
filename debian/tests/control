@@ -1,0 +1,7 @@
+Tests: cli
+Depends:
+ python3-json-pointer,
+
+Test-Command: cd "$AUTOPKGTEST_TMP" ; python3 -c "import jsonpointer; print(jsonpointer.__version__)"
+Depends:
+ python3-json-pointer,
